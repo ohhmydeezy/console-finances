@@ -24,9 +24,9 @@ copy the code onto using "touch<file name>".css & "touch<file name>.HTML".
 
 Step 3: Creating the code: 
 
-starting with the base code:
+starting with the base code HTML Code:
 
-![javascript starter code](./assests/images/Javascript%20page.png)
+![HTML starter code](./assets/images/Starter%20code.png)
 
 Step 4: Creating the prompts
 
