@@ -86,6 +86,9 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// ALl of the required variables
+
 let months = finances.length;
 let previousMonthAmount = 0;
 let endOfMonthCash;
@@ -103,19 +106,23 @@ for(var i = 0; i < months; i++){
   var currentDate = currentMonth[0];
   netTotal += currentMonthAmount;
 
+  // loop to find the net total
   if(i > 0){
     previousMonthAmount = finances[i - 1][1];
     monthlyChange = currentMonthAmount - previousMonthAmount;
   }
   netTotalChange += monthlyChange;
 
+  //loop to find the single greatest increase
   if(monthlyChange > greatestIncrease[1]){
     greatestIncrease = [currentDate,monthlyChange];
   }
+  //loop to find the single greatest decrease
   if(monthlyChange < greatestDecrease[1]){
     greatestDecrease = [currentDate,monthlyChange];
   }
 };
+//finding the average increase from month to month
 const average = Math.round((netTotalChange / (months - 1)) * 100) / 100;
 
 console.log(`Total Months: ${months} 
@@ -123,15 +130,3 @@ Total: $${netTotal.toLocaleString()}
 Average Change: $${average.toLocaleString()}
 Greatest Increase in Profits/Losses: ${greatestIncrease[0]} ($${greatestIncrease[1].toLocaleString()})
 Greatest Decrease in Profits/Losses: ${greatestDecrease[0]} ($${greatestDecrease[1].toLocaleString()})`)
-
-
-// // month = netTotal[0]; // equivalent of finances[i][0]; to be used later in the console.log
-//  endOfMonthCash = netTotal[1]; // equiv. of finances[i][1]
-//  totalProfitLoss += endOfMonthCash;  //the running total
-//  
-//  //next, the monthlyChange only gets updated if the index is > 0, or !==0, as a few of you had it during class
-//  if (i > 0) monthlyChange = endOfMonthCash - previousMonthAmount;
-//  console.log({monthlyChange})
-//  //then, we UPDATE the previous month's amount to the current end of month amount, in order to prepare for the next cycle thru the loop
- // previousMonthAmount = endOfMonthCash;
-//  console.log({previousMonthAmount})
