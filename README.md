@@ -47,27 +47,28 @@ Step 5: adding to the loops to check for the required paramenters.
 
 The next step was completed by adding a function in the foor loop which adds the current postion on the array (i) onto the following month until the array is complete and produce the answer. 
 
-Following this an if stateement was utilised to check
+Following this an if statement was utilised to check the average change from month to month and logged using by taking the net total change x the total number of months - 1 (the first month is not included in this calculation) following this, math.round function was used to ensure that the final number produced was to 2 decimal places as per the guidelines requested.
 
-![completed randomiser](./assests/images/randomiser.png)
+![average change](./assets/images/Average.png)
 
-Final step: creating the gernerate password function: 
+Following this, two if statements were utilised to check the singles greatest increase from month to month and the single greatest loss from month to month.
 
-The final step in the process, required combining all of the provided arrays containing special charecters, numeric 
-charecters, lowercase characters and uppercase characters using concatination, ensuring that the selected charecters are 
-added to the password by creating an array where they are stored and using .push and utilising a for loop which loops 
-though and creates a password with the selected number of charecters, and a second for loop which ensures that the some 
-charecters in the final password are replaced by the specificed special charecters.
+![cgreatest increase and decrease if statements](./assets/images/inc:dec.png)
 
-![completed password generator](./assests/images/generator.png)
+Final step: creating the console log: 
+
+![completed console log](./assets/images/Console%20log.png)
+
+The final product: 
+![final product](./assets/images/final.png)
 
 Usage: 
 
-    the page can be used to create secure randomly generated password for any purpose. Using the prompts, the password can be tailored to the requirements of the specific website. 
+    the page can be used to check the net profits and losses for any given finances array manually added to the JS file.
 
 Credits: 
 
-    Repo is made by myself, base code was provided by the university and the code thereafter was created with the help of my colleagues in the a study group, the help of teaching assistants and research completed on mdn web docs, youtube and stack overflow.
+    Repo is made by myself, initial fiannce array and basic HTML file was provided by the university and the code thereafter was created with the help of my colleagues in the a study group, the help of teaching assistants and research completed on mdn web docs and stack overflow.
 
 License:
 
